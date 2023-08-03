@@ -1,11 +1,7 @@
-div {
-
-}
-
  .bigRed {
   font-size: 20px;
   color: red;
 }
-.block>p {
+.block>p, .block>p>span {
   color:blue;
 }
