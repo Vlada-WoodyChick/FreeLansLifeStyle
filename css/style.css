@@ -1,7 +1,17 @@
- .bigRed {
+ .block {
+  border: 1px solid violet;
+ }
+ /* .bigRed {
   font-size: 20px;
   color: red;
-}
-.block>p, .block>p>span {
+} */
+/* .block>p, .block>p>span {
   color:blue;
+}
+.block > .bigRed > .bigRed, .block > .bigRed {
+  color:aquamarine;
+} */
+
+.block {
+  font-size: 30px;
 }
