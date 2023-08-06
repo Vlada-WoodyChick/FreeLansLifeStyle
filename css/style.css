@@ -36,5 +36,52 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------------------------------------------*/
 
- 
- 
+ .arial {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+ }
+
+ .fontSize30 {
+	font-size: 30px;
+ }
+ .italic {
+	font-style: italic;
+ }
+ .font700 {
+	font-weight: 700;
+	text-align: justify;
+ }
+ .textRight {
+text-align: right;
+ }
+ .textJustify {
+text-align: justify;
+font-size: 20px;
+ }
+ .textdecoration {
+	text-decoration:line-through;	
+ }
+ .shadow {
+	font-size: 30px;
+	text-shadow: 2px 1px 3px crimson;
+ }
+ .text-transform {
+	font-size: 20px;
+	text-transform: uppercase;
+ }
+
+ .ident {
+	text-indent: 50px;
+ }
+
+ .lspace {
+	letter-spacing: 10px;
+ }
+ .wordspace {
+	word-spacing: 20px;
+ }
+.whitespace {
+	white-space: normal;
+}
+.lineheight {
+	line-height: 20px;
+}
