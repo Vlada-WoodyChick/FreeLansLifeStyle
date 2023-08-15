@@ -89,51 +89,115 @@ h6 {
 
 /*--------------------------------------------------------*/
 body {
-
+	
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color: black;
-	padding: 30px;
+	color:black;
+	/* background: url('../dist/assets/img/annie_spratt_unsplash.png' ) 0 0 repeat; */
+	padding: 60px;
+		
+}
+.list {
+	font-size: 24px;
 
 }
 
-.block {
-	border: 5px solid red;
-	max-width: 800px;
-	height: 1600px;
-	margin: 0 auto;
-	position: relative;
+.list li{
+background: url('../dist/assets/icons/li3.svg') left 24px no-repeat;
+padding: 20px ;
+color: cadetblue;
 }
-
-.block div {
-	font-size: 18px;
-	line-height: 50px;
+.list li:first-child{
+	text-decoration:line-through;
+}
+.list li:first-child:hover{
+	text-decoration: none;
+}
+.list li:nth-child(2){
 	font-weight: bold;
+}
+.list li:nth-child(2):hover{
+	text-decoration: none;
+	color:#ff69b4;
+	padding-left: 20px;
+	background: url('../dist/assets/icons/li4.svg') left 24px no-repeat;
+	font-weight: normal;
+}
+.list li:nth-child(3){
+	font-style: italic;
+}
+.list li:nth-child(3):hover{
+font-style: normal;
+}
+
+.list li:last-child{
+	text-transform: uppercase;
+}
+.list li:last-child:hover{
+	text-transform: none;
+}
+
+.btn {
+	display: block;
+	margin: 10px 0 10px 0;
+	width: 250px;
+	height: 45px;
+	font-size: 24px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	/* text-align: center; */
 	text-align: center;
-	
-	
-
-}
-
-.block_1 {
-	background-color: yellow;
-	width: 50%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	
-}
-
-.block_2 {
-	background-color: blueviolet;
-	color: #fff;
-	width: 50%;
-	position: absolute;
-	right: 0;
-	top: 0;	
-}
-.block_3{
-	background-color: aquamarine;
+	line-height: 37px;
+	border: 1px solid red;
+	border-radius: 16px;
+	background-color:aquamarine;
 	position: relative;
-	z-index: 2;
+}
+.btn::after{
+	content: '\27F6';
+	font-size: 24px;
+	font-weight: bold;
+	position: absolute;
+	top: 2px;
+	right: 30px;
+	
+
 }
 
+
+
+.btn:hover{
+	background-color:cadetblue;
+}
+.btn:active{
+	background-color:darkgray	
+} 
+
+
+.inp {
+	
+	display: block;
+	margin: 10px 0 10px 0;
+	width: 250px;
+	height: 45px;
+	font-size: 24px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	/* text-align: center; */
+	line-height: 37px;
+	border: 1px solid rgb(255, 0, 0);
+	border-radius: 16px;
+	
+}
+.inp:focus{
+	box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+
+
+.text_1::first-letter {
+	font-size: 50px;
+	color:#ff69b4
+	
+}
+.text_2::first-line {
+font-size: 30px;
+color:cadetblue
+}
