@@ -1,39 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-@import './null.scss';
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+@import "./null.scss";
 @font-face {
-    font-family: 'PFDinTextCondPro-Medium';
-    font-style: normal;
-    font-weight: normal;
-	src:url(../dist/assets/fonts/pfdintextcondpro-medium/pfdintextcondpro-medium.eot);
-    src: local('PFDinTextCondPro-Medium'), 
-	url('../dist/assets/fonts/pfdintextcondpro-medium/PFDinTextCondPro-Medium.woff') format('woff'),
-	url('../dist/assets/fonts/pfdintextcondpro-medium/pfdintextcondpro-medium.ttf') format('truetype'),
-	url('../dist/assets/fonts/pfdintextcondpro-medium/pfdintextcondpro-medium.svg') format('svg');
-    }
+	font-family: "PFDinTextCondPro-Medium";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../dist/assets/fonts/pfdintextcondpro-medium/pfdintextcondpro-medium.eot);
+	src:
+		local("PFDinTextCondPro-Medium"),
+		url("../dist/assets/fonts/pfdintextcondpro-medium/PFDinTextCondPro-Medium.woff") format("woff"),
+		url("../dist/assets/fonts/pfdintextcondpro-medium/pfdintextcondpro-medium.ttf") format("truetype"),
+		url("../dist/assets/fonts/pfdintextcondpro-medium/pfdintextcondpro-medium.svg") format("svg");
+}
+@import url("https://russianfonts.org/fonts/pf-din-text-cond-pro-regular");
+@font-face {
+	font-family: "PFDinTextCondPro-Regular";
+	font-style: normal;
+	
+	src: url(../dist/assets/fonts/PFDinTextCondPro-Regular/pfdintextcondpro-regular.eot);
+	src:
+		local("PFDinTextCondPro-Medium"),
+		url("../dist/assets/fonts/PFDinTextCondPro-Regular/pfdintextcondpro-regular.woff") format("woff"),
+		url("../dist/assets/fonts/PFDinTextCondPro-Regular/pfdintextcondpro-regular.ttf") format("truetype"),
+		url("../dist/assets/fonts/PFDinTextCondPro-Regular/pfdintextcondpro-regular.svg") format("svg");
+}
 
 body {
-	
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color:black;
+	color: black;
 	background: green;
-	padding: 60px;		
+	padding: 60px;
 }
-.bodystyle{
-	font-family: 'PFDinTextCondPro-Medium';
+.bodystyle {
+	font-family: "PFDinTextCondPro-Medium";
 	background: #fff;
 	font-size: 30px;
 	line-height: 1.2;
 	margin: 0 0 30px 0;
 	font-weight: normal;
+}
+.regular {
+	font-family: "PFDinTextCondPro-Regular";
+	
+	background: #fff;
+	font-size: 30px;
+	line-height: 1.2;
+	margin: 0 0 30px 0;
 }
 .text {
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", sans-serif;
 	background: #fff;
 	font-size: 30px;
 	line-height: 1.2;
 	margin: 0 0 30px 0;
 	font-weight: normal;
-	
 }
-
-
