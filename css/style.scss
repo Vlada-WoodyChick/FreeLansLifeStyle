@@ -1,281 +1,44 @@
 @import "../../FreeLansLifeStyle/node_modules/normalize.css/normalize.css";
+
 body {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-.wrapper {
-	background: #ffffff;
-	min-height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-}
-.content {
-	flex: 1 1 auto;
-}
-.footer {
-	background: #f5f5f5;
+	width: 100%;
 
-	&__row {
-		display: flex;
-		justify-content: center;
-		height: 65px;
-		align-items: center;
-	}
-
-	&__text {
-		font-size: 12px;
-		line-height: 24px;
-		font-weight: 400;
-		letter-spacing: 0.3px;
-		color: #445162;
-	}
 }
-.contanier {
-	max-width: 1180px;
-	margin: 0 auto;
+.wrapper{
+	width: 100%;
+}
+.button{
+	width: 15%;
+	text-decoration: none;
+	// display: inline-block;
+	line-height: 60px;
+	padding: 0 5%;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 18px;
+	border-radius: 10px;
+	top: 0;
+	position: relative;
+	
+	margin: 40vh auto;
+	
+
 }
 
-.hi {
-	max-width: 100%;
-	padding: 50px;
-	background: #445162;
-	color: #ffffff;
-	display: flex;
 
-	&__row {
-		display: flex;
-		flex-direction: row;
-	}
-	&__img {
-		align-self: center;
-	}
+.button_1 {
+color: #fff;
+background-color: #5e5373;
+box-shadow: 0 5px 0px #3c537a;
+transition-duration: 500ms;
 
-	&__body {
-		margin: 0 -25px 0 0;
-	}
-
-	&__title {
-		font-size: 60px;
-		line-height: 1.2;
-		font-weight: 400;
-		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
-		margin: 0 0 40px 0;
-	}
-
-	&__list {
-	}
-
-	&__li {
-		background: url("../dist/assets/icons/liwhite.svg") 0px 10px no-repeat;
-		font-size: 20px;
-		line-height: 36px;
-		font-weight: 400;
-		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
-		padding: 0 25px 10px 22px;
-	}
-	&__li:last-child {
-		padding-bottom: 0;
-	}
 }
-
-.flexbox {
-	padding: 50px 30px 50px 30px;
-	background: #ffffff;
-
-	&__box {
-		display: flex;
+.button_1:hover {
+	top: 2px;
+	box-shadow: 0 3px 0px #3c537a;
+	background-color: #18b5a4;
 	}
 
-	&__img--box {
-		margin: 0 20px;
-	}
 
-	&__body {
-		color: #445161;
-		margin: 0 20px;
-	}
-
-	&__title {
-		font-size: 30px;
-		line-height: 36px;
-		font-weight: 400;
-		padding: 0 0 35px 0;
-	}
-
-	&__text {
-		ont-size: 16px;
-		line-height: 24px;
-		font-weight: 400;
-	}
-
-	&__li {
-		padding: 0 0 20px 0;
-	}
-	&__li:last-child {
-		padding: 0;
-	}
-}
-
-.column {
-	background: #f5f5f5;
-	color: #445161;
-	&__box {
-		padding: 50px 35px 50px 50px;
-	}
-	&__body {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	&__title {
-		font-size: 30px;
-		line-height: 36px;
-		font-weight: 400;
-		text-align: center;
-		padding: 0px 0 31px;
-	}
-
-	&__li {
-		display: flex;
-		width: 50%;
-		padding: 0 15px 30px 0;
-	}
-}
-
-.column--li {
-	&__img {
-		padding: 0 15px 0 0;
-	}
-
-	&__body {
-	}
-
-	&__title {
-		padding: 0 0 15px 0;
-		font-size: 24px;
-		line-height: 30px;
-		font-weight: 400;
-	}
-
-	&__text {
-		font-size: 16px;
-		line-height: 24px;
-		font-weight: 400;
-		color: #333333;
-	}
-}
-
-.vertical--box {
-	background: #ffffff;
-	width: 990px;
-	margin: 0 auto;
-	&__par:first-child {
-		padding: 0 0 35px 0;
-	}
-	&__body {
-		padding: 0 0 50px 0;
-	}
-
-	&__title {
-		padding: 50px 0 30px;
-	}
-
-	&__title--text {
-		font-size: 30px;
-		line-height: 36px;
-		font-weight: 400;
-		color: #445161;
-		text-align: center;
-	}
-
-	&__items--body {
-		display: flex;
-		margin: 0 -22.5px;
-	}
-	&__item--box {
-		padding: 0 22.5px;
-		width: 33.33%;
-	}
-	&__item {
-		background: #445162;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		height: 100%;
-		border-radius: 5px;
-	}
-
-	&__head {
-		font-size: 24px;
-		line-height: 30px;
-		font-weight: 400;
-		text-transform: uppercase;
-		color: #ffffff;
-		text-align: center;
-		padding: 18px 0 12px 0;
-		
-	}
-
-	&__label {
-		background: #ffffff;
-		font-size: 40px;
-		line-height: 30px;
-		font-weight: 400;
-		color: #445162;
-		padding: 25px 0 19px 0;
-		text-align: center;
-		box-sizing: border-box;
-		border: 2px solid #445162;
-	}
-
-	&__text {
-		flex: 1 1 auto;
-		font-size: 14px;
-		line-height: 24px;
-		font-weight: 400;
-		color: #ffffff;
-		padding: 19px 30px 23px 20px;
-	}
-
-	&__link {
-	}
-}
-.contanier {
-}
-.items--body {
-	&__item {
-		&_item--1 {
-		}
-
-		&_item--2 {
-		}
-
-		&_item--3 {
-		}
-	}
-
-	&__head {
-	}
-
-	&__label {
-	}
-
-	&__text {
-	}
-
-	&__link {
-		padding: 10px;
-	}
-}
-.vertical--box--link {
-	&__text {
-		font-size: 18px;
-		line-height: 18px;
-		font-weight: 700;
-		color: #445161;
-		background: #ffffff;
-		padding: 15px 0 13px 0;
-		border-radius: 2px;
-		text-align: center;
-	}
-}
+	
