@@ -28,17 +28,19 @@ body {
 .button_1 {
 	color: #fff;
 	background-color: #5e5373;
-	box-shadow: 0 5px 0px #3c537a;
-	
+	box-shadow: 0 1px 0px #3c537a;
+
 	transition-property: background-color, top;
 	transition-duration: 500ms, 300ms;
 	transition-delay: 0 2500ms;
+	transition: width 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 1000ms;
 }
 
 .button_1:hover {
 	top: 5px;
 	box-shadow: 7px 7px 7px #3c533c;
 	background-color: #18b;
-	// font-size: 24px;
-
+	font-size: 24px;
+	width: 200%;
+	transition: box-shadow 3000ms ease 0;
 }
