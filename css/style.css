@@ -1,5 +1,6 @@
 @charset "UTF-8";
-*, *:before, *:after {
+*,
+*:before, *:after {
   padding: 0;
   margin: 0;
   border: 0;
@@ -56,8 +57,79 @@ a {
   margin: 0px 0px 20px 0px;
 }
 
+.cards {
+  margin: 0px 0 70px 0;
+}
+
+.cards__row {
+  margin: 0px -15px 70px -15px;
+  display: flex;
+}
+
+.cards__column {
+  flex: 0 1 33.333%;
+  padding: 0px 15px;
+}
+
+.cards__image {
+  margin: 0px 0px 20px 0px;
+  padding: 0 0 58% 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.cards__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: none;
+     object-fit: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.items__item {
+  display: flex;
+  margin: 0px 0px 30px 0px;
+}
+
+.items__image {
+  flex: 0 0 500px;
+  position: relative;
+}
+
+.items__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.items__body {
+  flex: 1 1 auto;
+  padding: 0 0 0 30px;
+}
+
+.items__label {
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  margin: 0px 0px 20px 0px;
+}
+
+.text-align__center {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background: rgba(255, 170, 255, 0.6666666667);
+}
+
 .text-align__div {
   width: 400px;
-  height: 100px;
-  background: red;
+  height: 150px;
+  margin: 30px auto 30px auto;
+  border: white 2px solid;
 }/*# sourceMappingURL=style.css.map */
