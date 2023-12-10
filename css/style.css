@@ -94,7 +94,7 @@ a {
 }
 
 .items__image {
-  flex: 0 0 500px;
+  flex: 0 0 50%;
   position: relative;
 }
 
