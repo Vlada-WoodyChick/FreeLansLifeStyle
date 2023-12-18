@@ -1,5 +1,14 @@
 @charset "UTF-8";
 /*Обнуление*/
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -78,8 +87,10 @@ span.section__item_info {
 }
 
 .section__image {
+  box-sizing: border-box;
   padding: 15px;
   margin: 15px;
+  width: 300px;
 }
 
 .section__item_size {
@@ -87,4 +98,9 @@ span.section__item_info {
   width: 400px;
   padding: 10px;
   margin: 15px;
+}
+
+.section__item_section__item_background-color {
+  padding: 15px;
+  margin: 15px 45px;
 }/*# sourceMappingURL=style.css.map */
