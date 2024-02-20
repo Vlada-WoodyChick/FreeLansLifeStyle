@@ -25,6 +25,7 @@ body, html{
     grid-template: repeat(2, 1fr)/ repeat(3, 1fr);
     border: 2px dashed rgba(255, 255, 255, 0.2);
 }
+
 .grid__item {
     margin: 30px;
     padding: 30px;
@@ -32,3 +33,24 @@ body, html{
     border: 2px dashed rgba(255, 255, 255, 0.2);
 
 }
+.grid__item_1 {
+    
+    /* grid-column-end: ; */
+    grid-row-start: span 2 ;
+    /* grid-column-start: span 3; */
+    /* grid-row-end: 3; */
+    background:  brown;
+    /* color: ; */
+}
+.grid__item_2 {
+}
+.grid__item_3 {
+}
+.grid__item_4 {
+}
+.grid__item_5 {
+}
+.grid__item_6 {
+}
+
+
