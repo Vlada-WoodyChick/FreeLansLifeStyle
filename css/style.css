@@ -187,4 +187,29 @@ span.section__item_info {
   border-radius: 50%;
   background-color: #7a956b;
   box-shadow: 0 0 20px #d9f5c8;
+}
+
+.section__collapse {
+  margin: 0 20px 0 0;
+}
+
+.section__item_collapse {
+  padding: 15px;
+  margin: 0 0 50px 0;
+}
+.section__item_collapse-top {
+  margin: 0 0 20px 0;
 }/*# sourceMappingURL=style.css.map */
+
+.section__item {
+}
+.section__item_color-1 {
+}
+.section__item_bottom {
+  padding: 20px;
+  
+}
+.section__item_color-2 {
+}
+.section__item_color-3 {
+}
