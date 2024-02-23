@@ -22,25 +22,31 @@ body, html{
 }
 .grid__body {
     display: grid;
-    grid-template-rows: [start] 1fr [row2] 1fr [row-end];
+    grid-template-rows: [start] 150px [row2] 150px [row-end];
     grid-template-columns: [start] 1fr [col2] 1fr [col3] 1fr [col-end];
     border: 2px dashed rgba(255, 255, 255, 0.2);
+    justify-items: start;
+    align-items: end;
 }
 
 .grid__item {
-    margin: 30px;
+    margin: 10px;
     padding: 30px;
     text-align: center;
     border: 2px dashed rgba(255, 255, 255, 0.2);
 
 }
 .grid__item_1 {
-   grid-row: 1/3;
-    grid-column: 1/3;
+   /* grid-row: 1/3;
+    grid-column: 1/3; */
     background:  brown;
     /* color: ; */
+    align-self: stretch;
+    justify-self: stretch;
 }
 .grid__item_2 {
+    align-self: end;
+    justify-self: end;
 }
 .grid__item_3 {
 }
