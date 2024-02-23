@@ -25,8 +25,8 @@ body, html{
     grid-template-rows: [start] 150px [row2] 150px [row-end];
     grid-template-columns: [start] 1fr [col2] 1fr [col3] 1fr [col-end];
     border: 2px dashed rgba(255, 255, 255, 0.2);
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
+    grid-column-gap: 10%;
+    grid-row-gap: 10%;
     padding: 30px;
 }
 
