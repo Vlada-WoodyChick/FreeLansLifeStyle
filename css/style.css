@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 *,
 *:before, *:after {
@@ -132,4 +133,51 @@ a {
   height: 150px;
   margin: 30px auto 30px auto;
   border: white 2px solid;
+=======
+@import "../../FreeLansLifeStyle/node_modules/normalize.css/normalize.css";
+body {
+  width: 100%;
+  background: #000;
+}
+
+.wrapper {
+  padding: 10%;
+  width: 80%;
+}
+
+.content {
+  width: 100%;
+}
+
+.content__circle {
+  width: 20%;
+  height: 36vh;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+  animation-delay: 500ms;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation: white-circle 2000ms linear 5 500ms alternate forwards;
+}
+
+@keyframes white-circle {
+  0% {
+    left: 0;
+  }
+  50% {
+    border-radius: 20%;
+  }
+  100% {
+    left: 80%;
+  }
+}
+.content:hover .content__circle {
+  animation-play-state: paused;
+>>>>>>> @kFrames
 }/*# sourceMappingURL=style.css.map */
