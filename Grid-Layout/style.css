@@ -79,19 +79,26 @@ ul {
     font-size: 18px;
     color: #fff;
 }
+
 .header__burger {
 }
+
+ @media (max-width: 992px) {
+    .header__list {
+        display: none;
+    }
+ }
+
+
 .main {
-    display: grid;
-    grid-area: main;
     padding:  30px 15px;
-    grid-template: 1fr/ 1fr minmax(auto, 300px) minmax(auto, 1100px ) 1fr;
 }
-.sidebar__menu {
+
+.sidebar {
     grid-column: 2/3;
     background-color: darkgoldenrod;
     padding: 30px;
-   
+    margin: 0 0 30px 0;   
 }
 .sidebar__list {
 
@@ -105,14 +112,35 @@ margin: 0 0 15px 0;
 
 
 .content {
-    grid-column: 3/4;
-    padding:0 0 0 30px;
+  
 }
 .content__title {
 }
 .cotent__gallery {
     margin: 0 0 30px 0;
 }
+
+@media (min-width: 992px) {
+    .main {
+        display: grid;
+        grid-area: main;
+        grid-template: 1fr/ 1fr minmax(auto, 300px) minmax(auto, 1100px ) 1fr;
+        padding:  30px 15px;
+    }
+    .sidebar {
+        .sidebar {
+            grid-column: 2/3;
+            
+            margin: 0;   
+        }
+    }
+    .content {
+		grid-column: 3 / 4;
+		padding: 0px 0px 0px 30px;
+	}
+}
+
+
 .gallery {
 }
 .gallery__title {
@@ -136,9 +164,15 @@ padding: 0 0 85% 0;
    object-fit: cover;
 }
 .gallery__item_big {
-    grid-column: span 2;
-    grid-row: span 2;
+    
 
+}
+@media (min-width: 776px) {
+    .gallery__item_big {
+        grid-column: span 2;
+        grid-row: span 2;
+    
+    }
 }
 .content__products {
 }
@@ -191,22 +225,39 @@ padding: 0 0 85% 0;
    justify-self: start;
     
 }
+
 .footer {
     background-color:blueviolet;
     grid-area: footer;
     display: grid;    
     grid-template: 1fr/ 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
     align-items: center;
-    text-align: right;
+    text-align: left;
     padding: 15px;
     
 }
-.footer__copy {
-    grid-column: 2/3;
-}
-.footer__text {
-    grid-column: 3/4;
+
+@media (min-width: 550px) {
+    .footer__copy {
+        grid-column: 2/3;
+    }
+    .footer__text {
+        grid-column: 3/4;
+    }
 }
 
+@media (max-width: 550px){
+    .footer {
+        grid-template: 1fr 1fr/1fr;
+        .footer__copy {
+            order: 2;
+        }
+        .footer__text {
+            order: 1;
+        }
+
+
+    }
+}
 
 /* grid layot grid-row grid-column order gap  margin_and_padding */
